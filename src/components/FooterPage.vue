@@ -13,7 +13,7 @@ export default {
 <style scoped>
 .footer{
     background-color: #222;
-    color: coral;
+    color: #fcba03;
     display: flex;
     align-items: center;
     justify-content: center;

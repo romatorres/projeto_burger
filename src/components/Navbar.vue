@@ -29,13 +29,13 @@ export default {
     width: 90px;
 }
 .link a{
-    color: coral;
+    color: #fcba03;
     margin-left: 40px;
     text-decoration: none;
     font-size: 18px;
 }
 .link a:hover{
-    color: rgb(241, 205, 192);
-    transition: ease-in-out 500ms ;
+    color: #fff;
+    transition: .5s;
 }
 </style>
