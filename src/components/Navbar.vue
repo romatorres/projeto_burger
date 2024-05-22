@@ -4,7 +4,7 @@
         <router-link>
             <img :src="logo" :alt="alt" id="logo">
         </router-link>
-        <p class="text-logo">Burger<span> Top</span></p>
+        <p class="text-logo">App For<span> Burger</span></p>
         </div>
         <div class="link">
             <router-link to="/">Home</router-link>

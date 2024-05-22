@@ -1,6 +1,6 @@
 <template>
     <div class="main_banner">
-        <h1>Burger Top</h1>
+        <h1>App For Burger!! Um app para Hamburgerias, descomplicado e inteligente!</h1>
     </div>
 </template>
 
@@ -21,9 +21,11 @@ export default {
     justify-content: start;
 }
 .main_banner h1{
-    font-size: 60px;
+    font-size: 56px;
     color: #fff;
-    text-align: center;
-    padding: 20px 40px;
+    text-align: left;
+    padding: 20px 100px;
+    max-width: 700px;
+
 }
 </style>

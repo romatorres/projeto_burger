@@ -88,6 +88,42 @@
         "Tomate"
       ],
       "status": "Solicitado"
-    }  
+    },
+    {
+      "id": "7390",
+      "nome": "Ricardo",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
+      "opcionais": [
+        "Salame",
+        "Bacon",
+        "Tomate"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "dded",
+      "nome": "João Silva",
+      "pao": "Parmesão e Orégano",
+      "carne": "Alcatra",
+      "opcionais": [
+        "Bacon",
+        "Pepino"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "42db",
+      "nome": "Sandro Lima",
+      "pao": "Integral",
+      "carne": "Veggie burger",
+      "opcionais": [
+        "Bacon",
+        "Salame",
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado"
+    }
   ]
 }
