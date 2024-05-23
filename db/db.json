@@ -79,29 +79,6 @@
   ],
   "burgers": [
     {
-      "id": "49a8",
-      "nome": "João",
-      "pao": "Parmesão e Orégano",
-      "carne": "Picanha",
-      "opcionais": [
-        "Bacon",
-        "Tomate"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "7390",
-      "nome": "Ricardo",
-      "pao": "Italiano Branco",
-      "carne": "Maminha",
-      "opcionais": [
-        "Salame",
-        "Bacon",
-        "Tomate"
-      ],
-      "status": "Solicitado"
-    },
-    {
       "id": "dded",
       "nome": "João Silva",
       "pao": "Parmesão e Orégano",
@@ -113,15 +90,26 @@
       "status": "Solicitado"
     },
     {
-      "id": "42db",
-      "nome": "Sandro Lima",
-      "pao": "Integral",
-      "carne": "Veggie burger",
+      "id": "db82",
+      "nome": "Renato Silva",
+      "pao": "Parmesão e Orégano",
+      "carne": "Picanha",
+      "opcionais": [
+        "Salame",
+        "Cebola roxa",
+        "Pepino",
+        "Tomate"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "1ed1",
+      "nome": "Valter Mota",
+      "pao": "Italiano Branco",
+      "carne": "Maminha",
       "opcionais": [
         "Bacon",
-        "Salame",
-        "Cheddar",
-        "Tomate"
+        "Pepino"
       ],
       "status": "Solicitado"
     }

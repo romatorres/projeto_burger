@@ -23,10 +23,11 @@
                         </ul>
                     </td>
                     <td>
-                        <select>
-                            <option value="confirmado">Confirmado</option>
+                        <select name="status" id="status">
+                           
+                            <option v-for="s in status" :key="s.id" value="s.tipo">{{ s.tipo }}</option>
                         </select>
-                        <button class="btn-table">Delete</button>
+                        <button class="btn-table" @click="deleteBurger(burger.id)">Cancelar</button>
                     </td>
                 </tr>
             </tbody>
@@ -51,7 +52,23 @@ export default {
             const data = await req.json()
 
             this.burgers = data
-        }
+
+            this.getStatus()
+        },
+        async getStatus(){
+                const req = await fetch('http://localhost:3000/status')
+
+                const data = await req.json()
+
+                this.status = data
+            },
+            async deleteBurger(id){
+                const req = await fetch(`http://localhost:3000/burgers/${id}`, {method: 'DELETE'})
+
+                const res = await req.json()
+
+                this.getPedidos()
+            }
     },
     mounted(){
         this.getPedidos()
@@ -72,14 +89,14 @@ table {
 th,
 td {
   border: 1px solid rgb(160 160 160);
-  padding: 8px 60px;
+  padding: 8px 40px;
 }
 .btn-table{
     background-color: #222;
     color: #fcba03;
     font-weight: bold;
     border: solid 2px #222;
-    padding: 8px 30px;
+    padding: 8px 24px;
     cursor: pointer;
     transition: .5s;
 }
@@ -88,7 +105,7 @@ td {
     color: #222
 }
 select{
-    padding: 8px 10px;
-    margin-right: 10px;
+    padding: 8px 8px;
+    margin-right: 8px;
 }
 </style>

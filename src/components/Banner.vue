@@ -1,6 +1,6 @@
 <template>
     <div class="main_banner">
-        <h1>App For Burger!! Um app para Hamburgerias, descomplicado e inteligente!</h1>
+        <h1>Um app para Hamburgerias, descomplicado e inteligente!</h1>
     </div>
 </template>
 
@@ -13,8 +13,8 @@ export default {
 <style scoped>
 .main_banner{
     background-image: url('/public/img/burger.jpg');
-    background-position: 0 -310px;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 500px;
     display: flex;
     align-items: center;
