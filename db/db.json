@@ -87,7 +87,7 @@
         "Bacon",
         "Pepino"
       ],
-      "status": "Solicitado"
+      "status": "Finalizado"
     },
     {
       "id": "db82",
@@ -100,7 +100,7 @@
         "Pepino",
         "Tomate"
       ],
-      "status": "Solicitado"
+      "status": "Em produção"
     },
     {
       "id": "1ed1",
@@ -110,6 +110,28 @@
       "opcionais": [
         "Bacon",
         "Pepino"
+      ],
+      "status": "Em produção"
+    },
+    {
+      "id": "f4d4",
+      "nome": "Maria Almeida",
+      "pao": "Italiano Branco",
+      "carne": "Picanha",
+      "opcionais": [
+        "Bacon",
+        "Cebola roxa",
+        "Pepino"
+      ],
+      "status": "Em produção"
+    },
+    {
+      "id": "8c80",
+      "nome": "Sandro Pereira",
+      "pao": "Parmesão e Orégano",
+      "carne": "Veggie burger",
+      "opcionais": [
+        "Cheddar"
       ],
       "status": "Solicitado"
     }

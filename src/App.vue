@@ -30,8 +30,9 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 .container_main{
-  margin: 50px;
-  min-height: 250px;
+  margin-top: 150px;
+  margin-bottom: 200px;
+  height: auto;
 }
 h1{
   text-align: center;

@@ -20,7 +20,8 @@ export default {
     border: 2px solid #b8daff;
     border-radius: 5px;
     padding: 10px;
-    max-width: 400px;
+    max-width: 500px;
     margin: 30px auto;
+    text-align: center;
 }
 </style>

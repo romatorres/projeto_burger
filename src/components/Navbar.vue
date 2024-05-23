@@ -23,10 +23,13 @@ export default {
 <style scoped>
 #nav{
     background-color: #222;
-    padding: 16px 100px;
+    padding: 12px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 #logo{
     width: 70px;

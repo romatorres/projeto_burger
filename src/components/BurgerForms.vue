@@ -80,10 +80,10 @@ export default {
             const res = await req.json()
 
             // Mensagem de confirmação
-            this.msg = `O pedido [ Nº${res.id} ] foi confirmado com sucesso!`
+            this.msg = `O seu pedido Nº ${res.id} foi confirmado com sucesso!`
 
             // Limpar menssagem
-            setTimeout(() => this.msg = '', 3000)
+            setTimeout(() => this.msg = '', 4000)
 
             // Limpar os campos
             this.nome = '';

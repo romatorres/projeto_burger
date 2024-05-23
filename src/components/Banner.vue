@@ -19,6 +19,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: start;
+    margin-top: 90px;
 }
 .main_banner h1{
     font-size: 56px;

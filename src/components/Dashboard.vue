@@ -1,4 +1,5 @@
 <template>
+    <Message :msg="msg" v-show="msg" />
     <div class="table-container">
         <table>
             <thead>
@@ -23,9 +24,8 @@
                         </ul>
                     </td>
                     <td>
-                        <select name="status" id="status">
-                           
-                            <option v-for="s in status" :key="s.id" value="s.tipo">{{ s.tipo }}</option>
+                        <select name="status" id="status" @change="updateBurgers($event, burger.id)">
+                            <option v-for="s in status" :key="s.id" :value="s.tipo" :selected="burger.status == s.tipo">{{ s.tipo }}</option>
                         </select>
                         <button class="btn-table" @click="deleteBurger(burger.id)">Cancelar</button>
                     </td>
@@ -36,13 +36,16 @@
 </template>
 
 <script>
+import Message from './Message.vue';
+
 export default {
     name: "Dashboard",
     data(){
         return{
             burgers: null,
             burger_id: null,
-            status: []
+            status: [],
+            msg: null
         }
     },
     methods:{
@@ -63,15 +66,43 @@ export default {
                 this.status = data
             },
             async deleteBurger(id){
-                const req = await fetch(`http://localhost:3000/burgers/${id}`, {method: 'DELETE'})
+                const req = await fetch(`http://localhost:3000/burgers/${id}`, 
+                {method: 'DELETE'})
 
                 const res = await req.json()
 
+                // Mensagem de confirmação
+                 this.msg = `O pedido foi excluido com sucesso!`
+
+                // Limpar menssagem
+                setTimeout(() => this.msg = '', 4000)
+
                 this.getPedidos()
-            }
-    },
+            },
+            async updateBurgers(event, id){
+                const option = event.target.value
+
+                const dataJson = JSON.stringify({status: option}) 
+
+                const req = await fetch(`http://localhost:3000/burgers/${id}`, 
+                {method: 'PATCH',
+                headers: {'Content-Type': 'application/json'},
+                body: dataJson }) 
+
+                const res = await req.json()
+
+                // Mensagem de confirmação
+                this.msg = `O status do pedido Nº ${res.id} foi atualizado para ${res.status}!`
+
+                // Limpar menssagem
+                setTimeout(() => this.msg = '', 4000)
+            }   
+        },
     mounted(){
         this.getPedidos()
+    },
+    components: {
+        Message
     }
 }
 </script>

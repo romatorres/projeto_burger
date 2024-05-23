@@ -17,6 +17,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 </style>
